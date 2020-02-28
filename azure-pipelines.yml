@@ -9,7 +9,7 @@ steps:
   inputs:
     command: 'publish'
     publishWebProjects: false
-    arguments: '--configuration Release -r osx.10.14-x64 --self-contained true'
+    arguments: '--self-contained true'
 
 - task: PublishBuildArtifacts@1
   inputs:
