@@ -11,6 +11,10 @@ steps:
 - script: dotnet publish --configuration $(buildConfiguration) -r osx.10.14-x64 --self-contained true
   displayName: 'dotnet publish $(buildConfiguration) -r osx.10.14-x64 -self-contained true'
 
+- task: CopyFiles@2
+  inputs:
+    targetFolder: '$(Build.ArtifactStagingDirectory)'
+
 - task: PublishBuildArtifacts@1
   inputs:
     pathtoPublish: '$(Build.ArtifactStagingDirectory)'
