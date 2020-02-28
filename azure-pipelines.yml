@@ -9,6 +9,7 @@ steps:
   inputs:
     command: 'publish'
     publishWebProjects: false
+    projects: '**\*.csproj'
     arguments: '--configuration Release -r osx.10.14-x64 --self-contained true'
 
 - task: PublishBuildArtifacts@1
