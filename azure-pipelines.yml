@@ -8,8 +8,8 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
-- script: dotnet build --configuration $(buildConfiguration) -r osx.10.14-x64 --self-contained true
-  displayName: 'dotnet build $(buildConfiguration) -r osx.10.14-x64 -self-contained true'
+- script: dotnet publish --configuration $(buildConfiguration) -r osx.10.14-x64 --self-contained true
+  displayName: 'dotnet publish $(buildConfiguration) -r osx.10.14-x64 -self-contained true'
 
 - task: PublishBuildArtifacts@1
   inputs:
