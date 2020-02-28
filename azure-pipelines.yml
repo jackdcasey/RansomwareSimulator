@@ -4,16 +4,12 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
-variables:
-  buildConfiguration: 'Release'
-
 steps:
-- script: dotnet publish --configuration $(buildConfiguration) -r osx.10.14-x64 --self-contained true
-  displayName: 'dotnet publish $(buildConfiguration) -r osx.10.14-x64 -self-contained true'
-
-- task: CopyFiles@2
+- task: DotNetCoreCLI@2
   inputs:
-    targetFolder: '$(Build.ArtifactStagingDirectory)'
+    command: 'publish'
+    publishWebProjects: false
+    arguments: '--configuration Release -r osx.10.14-x64 --self-contained true'
 
 - task: PublishBuildArtifacts@1
   inputs:
