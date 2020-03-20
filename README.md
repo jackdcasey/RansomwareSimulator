@@ -40,9 +40,9 @@ todo :)
 # How To Use
 After starting you should have 3 options:
 
-1. Run simulation *Start a simulation*
-2. Clean up old simulations *Clean up any remaining files and directories from previous simulations*
-3. Exit *Exit the tool*
+1. **Run simulation** *Start a simulation*
+2. **Clean up old simulations** *Clean up any remaining files and directories from previous simulations*
+3. **Exit** *Exit the tool*
 
 # Output Example
 
