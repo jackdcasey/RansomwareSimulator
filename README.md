@@ -26,7 +26,7 @@ Please select an option:
 
 Ensure [.net core framework](https://dotnet.microsoft.com/download/dotnet-core/3.1) is installed  
 
-Windows, macOS, Linux:
+Run the following commands on Windows, macOS or Linux:
 ```
 git clone https://github.com/jackdcasey/RansomwareSimulator.git
 cd RansomwareSimulator
