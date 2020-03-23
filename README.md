@@ -1,5 +1,5 @@
 # ✨✨✨ RansomwareSimulator ✨✨✨
-A cross-platform tool for simulating ransomware
+A cross-platform tool for testing ransomware protection
 
 ```
     ____
