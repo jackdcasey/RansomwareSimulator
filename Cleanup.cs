@@ -12,7 +12,8 @@ namespace RansomwareSimulator
 
             string[] directoriesToClean = Directory.EnumerateDirectories(directory, directoryPattern).ToArray();
 
-            Console.WriteLine($"{directoriesToClean.Length} directories to remove");
+            int len = directoriesToClean.Length;
+            Console.WriteLine($"{len} {(len == 1 ? "directory" : "directories")} to remove");
 
             foreach (string dir in directoriesToClean)
             {
